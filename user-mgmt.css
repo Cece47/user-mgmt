@@ -1,4 +1,5 @@
 .user-input {
+  position:relative;
   border: 1px solid black;
   background-color:white;
   margin-left:15px;
