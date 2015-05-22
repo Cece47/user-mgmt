@@ -10,15 +10,24 @@ $ (function () {
       userEntry[this.name] = this.value;
     });
 
-    var listUsers = $.makeArray(userEntry);
-    var list = document.querySelector('.user-list');
+    // console.log (userEntry);
 
-    list.innerHTML = userEntry.map(function (userEntry, i) {
-        return '<li class="user-li">' +
-          escape(userEntry) +
-          '<button type="button" class="remove" data-index="' + i + '">X</button>'+
-          '</li>';
-      }).join('');
+    var li = $('<li class="user-field"><span class="user-label"></span><button class="user-remove">X</button></li>');
+    li.find('.user-label').text(userEntry['first-name'] + (" ") + userEntry['last-name'] + (" ") + userEntry['email']);
+    // console.log (txt);
+    // $('list').append($('<li class = "user-field"></li>').text(txt.val()));
+    $('.user-list').append(li);
+
+    //txt.val('');
+
+
+
+    // list.innerHTML = listUsers.map(function (userEntry, i) {
+    //     return '<li class="user-li">' +
+    //       escape(userEntry) +
+    //       '<button type="button" class="remove" data-index="' + i + '">X</button>'+
+    //       '</li>';
+    //   }).join('');
 
   });
 });
@@ -104,3 +113,8 @@ $ (function () {
 //
 //
 // )
+
+// var txt = $(this).find('.todo-txt');
+// var li = $('<li class="todo-item"><span class="todo-label"></span><button class="todo-remove">X</button></li>');
+// li.find('.todo-label').text(txt.val());
+// $('.todo-list').append(li);
