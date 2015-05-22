@@ -8,13 +8,12 @@ $ (function (){
 
   addUser();
   redrawUsers();
-});
 
-function addUser() {
-  var txt = document.querySelector('.user-input');
-
+function addUser() {}
 
 });
+
+
 
 // var toValidate = $ ('.userFirstName, .userLastName, .userEmail');
 //
@@ -37,3 +36,6 @@ function addUser() {
 //     $(this).css("background-color", "blue");
 //   }
 // });
+//
+// function addUser() {
+//   var txt = document.querySelector('.user-input');
