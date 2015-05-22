@@ -1,32 +1,77 @@
-$ (function (){
-  'use strict';
+$ (function () {
+   'use strict';
 
+  $('.user-input').on('submit', function (e) {
+    e.preventDefault();
 
+    var userEntry = {};
 
-  $ ('button').click(function(e) {
-  e.preventDefault();
+    $('.user-field').each(function() {
+      userEntry[this.name] = this.value;
+    });
 
-  addUser();
-  redrawUsers();
+    var listUsers = $.makeArray(userEntry);
+    var list = document.querySelector('.user-list');
+
+    list.innerHTML = userEntry.map(function (userEntry, i) {
+        return '<li class="user-li">' +
+          escape(userEntry) +
+          '<button type="button" class="remove" data-index="' + i + '">X</button>'+
+          '</li>';
+      }).join('');
+
+  });
 });
+     //$(this).find('.todo-txt');
 
-function addUser() {
-  var txt = document.querySelector('.user-input');
-
-
-});
+// var users = [];
+//
+// $ (function (){
+//   'use strict';
+//
+//
+//
+//   $ ('button').click(function(e) {
+//   e.preventDefault();
+//
+//   addUser();
+//   redrawUsers();
+// });
+//
+// function addUser() {
+//   var txt = document.querySelector('.user-input');
+//
+//   if (txt.value) {
+//     users.push(txt.value);
+//     users.sort();
+//     txt.value = '';
+//   }
+// }
+//
+// function redrawUsers() {
+//   var list = document.querySelector('.user-list');
+//
+//   list.innerHTML = users.map(function (user, i) {
+//     return '<li class="user-item">' +
+//       escape(user) +
+//       '<button type="button" class="remove" data-index="' + i + '">X</button>'+
+//       '</li>';
+//   }).join('');
+// }
+//
+// });
 
 // var toValidate = $ ('.userFirstName, .userLastName, .userEmail');
 //
-// toValidate.keyup(function() {
-//   if ($(this).val().length > 0){
+// toValidate.keyup(function(e) {
+//   if ($(e.target).val().length > 0){
 //     $('.add').removeAttr('disabled');
 //   } else{
 //
 //   }
 // });
 
-
+// var txt = document.querySelector('.user-input');
 
 // var textEntered = true;
 // $ ("input[type=text]").each(function () {
@@ -37,3 +82,25 @@ function addUser() {
 //     $(this).css("background-color", "blue");
 //   }
 // });
+//
+// $(document).ready(function() {
+//
+//   var arrList = [];
+//
+//   var firstName = ".firstname";
+//   var lastName = ".lastname";
+//   var email = '.email';
+//
+//   $(".userfields").submit(function (e){
+//
+//   e.preventDefault();
+//
+//   $(".userlist").append($(".firstname, .lastname, "))
+//
+// }
+//
+// }
+//
+//
+//
+// )
