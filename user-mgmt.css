@@ -1,14 +1,37 @@
-.user-input {
-  position:relative;
-  border: 1px solid black;
-  background-color:white;
-  margin-left:15px;
-  padding-left:20px;
-  margin-right:200px;
-  padding-bottom:60px;
-  padding-top:20px;
-  border-radius:20px;
+body {
+  background: url("https://drive.google.com/thumbnail?id=0BxWoEqEP2BQZNHZ5aGhDSGFCUk0&authuser=0&v=1432574447487&sz=w1195-h473");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color:#6EB1B2;
+  margin: 0 0 0 0;
+  position: relative;
+}
+.container {
+  margin-right:900px;
+  margin-left:170px;
+  margin-top:100px;
+  font-family: 'Poiret One', cursive;
+  font-size:30px;
+  line-height:10px;
+  color:#A4A09E;
 }
 .submit {
   margin-top:20px;
+}
+.add {
+  margin-top:50px;
+  margin-left:25px;
+  text-decoration:none;
+  padding:10px;
+  font-size:15px;
+  font-family: 'Poiret One', cursive;
+  border:none;
+  border-radius: 20px;
+  padding-left:20px;
+  padding-right:20px;
+}
+.add:hover {
+  background-color:#6EB1B2;
+  color:white;
 }
