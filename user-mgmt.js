@@ -20,15 +20,6 @@ $ (function () {
 
     //txt.val('');
 
-
-
-    // list.innerHTML = listUsers.map(function (userEntry, i) {
-    //     return '<li class="user-li">' +
-    //       escape(userEntry) +
-    //       '<button type="button" class="remove" data-index="' + i + '">X</button>'+
-    //       '</li>';
-    //   }).join('');
-
   });
 });
      //$(this).find('.todo-txt');

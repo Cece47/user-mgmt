@@ -5,7 +5,9 @@ body {
   background-position: center center;
   background-color:#6EB1B2;
   margin: 0 0 0 0;
-  position: relative;
+  margin-bottom:-30px;
+  margin-top:30px;
+  background-attachement: fixed;
 }
 .container {
   margin-right:900px;
@@ -15,9 +17,6 @@ body {
   font-size:30px;
   line-height:10px;
   color:#A4A09E;
-}
-.submit {
-  margin-top:20px;
 }
 .add {
   margin-top:50px;
@@ -34,4 +33,23 @@ body {
 .add:hover {
   background-color:#6EB1B2;
   color:white;
+}
+li {
+  background-color:#6EB1B2;
+  font-family:Helvetica;
+  font-size:20px;
+  padding:20px;
+  margin-right:350px;
+  list-style-type:none;
+  position:relative;
+  z-index:-1;
+  margin-left:450px;
+  float:top;
+  font-family:Helvetica;
+  color:white;
+  border: 1px solid white;
+  border-radius:20px;
+}
+li button {
+  float: right;
 }
