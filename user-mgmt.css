@@ -53,3 +53,8 @@ li {
 li button {
   float: right;
 }
+.user-list {
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+}
